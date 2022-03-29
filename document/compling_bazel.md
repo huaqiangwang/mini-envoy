@@ -53,3 +53,13 @@ With the output:
 > INFO: Build completed successfully, 1 total action
 > INFO: Build completed successfully, 1 total action
 > Mini-Envoy Project
+
+
+### Sandbox issue
+source code fetched by 'new_git_repository' could not be copied to 'sandbox' external folder, while
+it could be found in `bazel_<project>/external` folder. Fixed this temporally by disabling the sandbox.
+
+**Disable sandbox**
+``` shell
+bazel build //... --spawn_strategy=standalone
+```
