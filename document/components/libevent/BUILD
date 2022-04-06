@@ -5,3 +5,10 @@ cc_binary(
   copts = [],
   deps = ["@com_github_libevent_libevent//:libevent"]
 )
+
+cc_binary(
+  name = "bench",
+  srcs = ["bench.c"],
+  copts = [],
+  deps = ["@com_github_libevent_libevent//:libevent"]
+)
