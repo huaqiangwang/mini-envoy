@@ -2,7 +2,17 @@
 
 ## scoped & unscoped enumeration
 
+[doc](https://en.cppreference.com/w/cpp/language/enum)
 - How to define and name it, more flexible than C standard
+  *unscoped*:
+    - defined in a struct
+    - accessing enum value which is defined in a struct
+    
+  *scoped*:
+     - Must have a Name scope before value
+  
+  ...
+       
 - Namespace and enumeration
 - Type and static cast. Create an enumeration type mixed with several pre-defined types
 - is_enum, is_scoped_enum, to_underlying, underlying_type

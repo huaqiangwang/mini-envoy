@@ -51,6 +51,7 @@ private:
   std::vector<DeferredDeletablePtr> to_delete_2_;
   std::vector<DeferredDeletablePtr>* current_to_delete_;
   std::mutex post_lock_;
+  // list element using range for?
   std::list<std::function<void()>> post_callbacks_;
   bool deferred_deleting_{};
 };
